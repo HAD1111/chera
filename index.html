@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHERA PATISSERIE | A little joy, always</title>
+  <meta name="description" content="CHERA PATISSERIE — Boutique handcrafted dessert cups, tiramisu, cheesecakes and cakes. Born from Joy, crafted in cream.">
+  <meta name="theme-color" content="#B20A45">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="CHERA PATISSERIE | A little joy, always">
+  <meta property="og:description" content="Boutique handcrafted dessert cups, tiramisu, cheesecakes and cakes. Born from Joy, crafted in cream.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/products-1.jpg">
+
+  <!-- Favicon: Inline SVG Flower Emblem -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='10' r='7' fill='%23B20A45' opacity='0.85'/%3E%3Ccircle cx='16' cy='22' r='7' fill='%23B20A45' opacity='0.85'/%3E%3Ccircle cx='10' cy='16' r='7' fill='%23B20A45' opacity='0.85'/%3E%3Ccircle cx='22' cy='16' r='7' fill='%23B20A45' opacity='0.85'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23FFF9F2'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Preconnect + Load -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@400;500&family=Fraunces:opsz,wght@9..144,400&display=swap" rel="stylesheet">
+
+  <!-- Preload Hero Image -->
+  <link rel="preload" as="image" href="assets/images/products-1.jpg">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+
+  <!-- ============ STICKY HEADER ============ -->
+  <header class="site-header" role="banner">
+    <a href="#" class="site-header__logo" aria-label="CHERA PATISSERIE — Home">
+      <img src="assets/images/logo.jpg" alt="Chera Patisserie" width="180" height="44">
+    </a>
+
+    <nav class="site-header__nav" aria-label="Main navigation">
+      <a href="#desserts">Desserts</a>
+      <a href="#menu">Menu</a>
+      <a href="#craft">Our Craft</a>
+      <a href="#gifting">Gifting</a>
+      <a href="#visit">Visit</a>
+    </nav>
+
+    <div style="display:flex;align-items:center;gap:8px">
+      <button class="site-header__cart-btn cart-trigger" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 01-8 0"/>
+        </svg>
+        <span class="cart-badge" aria-live="polite" aria-label="Items in cart">0</span>
+      </button>
+
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE MENU ============ -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Navigation menu">
+    <div style="color:var(--blush);margin-bottom:24px">
+      <svg class="flower-emblem" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:40px;height:40px;color:var(--blush)">
+        <circle cx="16" cy="10" r="7" fill="currentColor" opacity="0.8"/>
+        <circle cx="16" cy="22" r="7" fill="currentColor" opacity="0.8"/>
+        <circle cx="10" cy="16" r="7" fill="currentColor" opacity="0.8"/>
+        <circle cx="22" cy="16" r="7" fill="currentColor" opacity="0.8"/>
+        <circle cx="16" cy="16" r="3" fill="var(--ivory)"/>
+      </svg>
+    </div>
+    <a href="#desserts">Desserts</a>
+    <a href="#menu">Menu</a>
+    <a href="#craft">Our Craft</a>
+    <a href="#gifting">Gifting</a>
+    <a href="#visit">Visit</a>
+    <a href="#" class="cart-trigger" style="color:var(--raspberry)">Cart</a>
+  </div>
+
+  <main>
+
+    <!-- ============ 01 HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__inner">
+        <div class="hero__content reveal">
+          <div class="hero__logo">
+            <img src="assets/images/logo.jpg" alt="Chera Patisserie" width="560" height="200">
+          </div>
+          <p class="hero__tagline">Born from Joy,<br>crafted in cream.</p>
+          <p class="hero__subtitle">A LITTLE JOY, ALWAYS CHERA</p>
+          <div class="hero__actions">
+            <a href="#menu" class="btn-primary">Order Now</a>
+            <a href="#desserts" class="btn-text">Explore Our Desserts</a>
+          </div>
+        </div>
+        <div class="hero__images reveal">
+          <!-- Blush flourish behind arch -->
+          <svg class="hero__flourish" viewBox="0 0 500 600" fill="none" aria-hidden="true">
+            <ellipse cx="250" cy="300" rx="220" ry="260" fill="var(--blush)" opacity="0.25"/>
+            <ellipse cx="280" cy="280" rx="180" ry="220" fill="var(--blush)" opacity="0.15"/>
+          </svg>
+          <div class="hero__image-main">
+            <img src="assets/images/products-1.jpg" alt="Three handcrafted Chera dessert cups — chocolate, strawberry and pistachio" width="600" height="800" fetchpriority="high">
+          </div>
+          <div class="hero__image-secondary">
+            <img src="assets/images/hand-gift-box.jpg" alt="A hand lifting the elegant pink Chera gift box" width="400" height="500" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WAVY DIVIDER ============ -->
+    <svg class="wavy-divider" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,20 C360,40 720,0 1080,20 C1260,30 1380,15 1440,20 L1440,40 L0,40 Z" fill="rgba(247,198,206,0.12)"/>
+    </svg>
+
+    <!-- ============ 02 THE CHERA FEELING ============ -->
+    <section class="feeling" id="feeling">
+      <div class="container">
+        <p class="feeling__text reveal">
+          Beautifully layered. Carefully crafted.<br>Made to bring a little joy.
+        </p>
+        <p class="feeling__body reveal">
+          Every Chera cup is handmade with intention — silky creams, tender sponge,
+          and the finest ingredients layered together to create something worth savouring.
+          We believe dessert should feel like a small celebration.
+        </p>
+        <div class="flower-divider reveal" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ============ WAVY DIVIDER ============ -->
+    <svg class="wavy-divider wavy-divider--flip" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,20 C360,40 720,0 1080,20 C1260,30 1380,15 1440,20 L1440,40 L0,40 Z" fill="rgba(247,198,206,0.12)"/>
+    </svg>
+
+    <!-- ============ 03 OUR DESSERTS ============ -->
+    <section class="desserts" id="desserts">
+      <div class="container" style="text-align:center">
+        <h2 class="reveal">Our Desserts</h2>
+        <p class="reveal" style="max-width:480px;margin:8px auto 0;color:var(--chocolate);opacity:0.8">
+          Three worlds of flavour, each one layered with care.
+        </p>
+      </div>
+      <div class="desserts__grid" id="desserts-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- ============ 04 SIGNATURE FLAVORS ============ -->
+    <section class="signatures" id="signatures">
+      <div class="signatures__header">
+        <div>
+          <h2 class="reveal">Signature Flavours</h2>
+          <p class="reveal" style="color:var(--chocolate);opacity:0.8;margin-top:4px">Our most-loved creations.</p>
+        </div>
+        <div class="scroll-arrows" style="display:flex;gap:8px">
+          <button class="scroll-arrow" id="sig-arrow-left" aria-label="Scroll left">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button class="scroll-arrow" id="sig-arrow-right" aria-label="Scroll right">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 6 15 12 9 18"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="signatures__scroll-container">
+        <div class="scroll-snap-row" id="signatures-scroll">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WAVY DIVIDER ============ -->
+    <svg class="wavy-divider" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,20 C360,0 720,40 1080,20 C1260,10 1380,25 1440,20 L1440,40 L0,40 Z" fill="rgba(247,198,206,0.08)"/>
+    </svg>
+
+    <!-- ============ 05 THE MENU ============ -->
+    <section class="menu" id="menu">
+      <div class="menu__header container">
+        <h2 class="reveal">The Cups Menu</h2>
+        <p class="menu__subtitle reveal">Serves 1–2</p>
+      </div>
+
+      <!-- Filter Pills -->
+      <div class="filter-pills container reveal" role="group" aria-label="Filter by category">
+        <button class="filter-pill" data-category="all" aria-pressed="true">All</button>
+        <button class="filter-pill" data-category="tiramisu" aria-pressed="false">Tiramisu</button>
+        <button class="filter-pill" data-category="cheesecake" aria-pressed="false">Cheesecake</button>
+        <button class="filter-pill" data-category="cake" aria-pressed="false">Cakes</button>
+      </div>
+
+      <div class="menu__grid" id="menu-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- ============ 06 THE CRAFT ============ -->
+    <section class="craft" id="craft">
+      <div class="craft__inner">
+        <div class="craft__image reveal">
+          <img src="assets/images/chef.jpg" alt="The hands behind Chera — carefully mixing fresh ingredients" width="600" height="800" loading="lazy">
+        </div>
+        <div class="craft__content">
+          <h2 class="reveal">Meet the hands<br>behind Chera.</h2>
+          <p class="craft__intro reveal">
+            Every cup tells a story of patience, precision and genuine love for the craft.
+          </p>
+          <p class="craft__body reveal">
+            At Chera, desserts aren't assembled — they're composed. Layer by layer,
+            each cup is built by hand using the finest ingredients: real mascarpone,
+            fresh fruit, rich cocoa and buttery biscuit bases. No shortcuts. No compromises.
+            Just honest, beautiful desserts made the way they should be.
+          </p>
+          <div class="craft__values reveal">
+            <div class="craft__value">
+              <p class="craft__value-label">Handcrafted</p>
+              <p class="craft__value-sub">Every single cup</p>
+            </div>
+            <div class="craft__value">
+              <p class="craft__value-label">Finest ingredients</p>
+              <p class="craft__value-sub">No compromises</p>
+            </div>
+            <div class="craft__value">
+              <p class="craft__value-label">Layer by layer</p>
+              <p class="craft__value-sub">Built with care</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 07 GIFTING ============ -->
+    <section class="gifting" id="gifting">
+      <div class="gifting__inner">
+        <div class="gifting__content">
+          <h2 class="reveal">Wrapped in a<br>little joy.</h2>
+          <p class="reveal" style="color:var(--chocolate);line-height:1.7">
+            Birthdays, celebrations or just because — a Chera gift box turns any moment
+            into something sweeter. Our signature pink box is designed to delight before
+            a single bite.
+          </p>
+          <ul class="gifting__features reveal">
+            <li>Arched structure with satin ribbon handles</li>
+            <li>Branded with "A Little Joy, Always Chera"</li>
+            <li>Fits our entire dessert cup range</li>
+            <li>A thoughtful gift, ready to give</li>
+          </ul>
+          <div class="reveal">
+            <button class="btn-primary" id="btn-add-gift">Add gift packaging</button>
+            <span style="display:inline-block;margin-left:12px;font-size:0.8125rem;color:var(--chocolate);opacity:0.7">Complimentary</span>
+          </div>
+        </div>
+        <div class="gifting__image reveal">
+          <img src="assets/images/hand-gift-box.jpg" alt="A hand lifting the pink Chera gift box with satin ribbon handles" width="600" height="600" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 08 VISIT CHERA ============ -->
+    <section class="visit" id="visit">
+      <div class="visit__inner">
+        <div class="visit__image reveal">
+          <img src="assets/images/shop-mockup.jpg" alt="The Chera Patisserie boutique storefront — burgundy awnings, arched windows, warm golden light" width="800" height="600" loading="lazy">
+        </div>
+        <div class="visit__content">
+          <h2 class="reveal">Visit Chera</h2>
+          <p class="reveal" style="color:var(--chocolate);line-height:1.7">
+            Step into our burgundy-and-cream boutique and see where the joy is made.
+            The glass cases glow with freshly layered cups, and the scent of cocoa
+            and vanilla is always in the air.
+          </p>
+          <div class="visit__info reveal">
+            <div class="visit__info-row">
+              <span class="visit__info-label">Address</span>
+              <span class="visit__info-value">Address coming soon</span>
+            </div>
+            <div class="visit__info-row">
+              <span class="visit__info-label">Hours</span>
+              <span class="visit__info-value">Opening hours coming soon</span>
+            </div>
+            <div class="visit__info-row">
+              <span class="visit__info-label">Phone</span>
+              <span class="visit__info-value">Phone coming soon</span>
+            </div>
+            <div class="visit__info-row">
+              <span class="visit__info-label">Email</span>
+              <span class="visit__info-value">Email coming soon</span>
+            </div>
+            <div class="visit__info-row">
+              <span class="visit__info-label">Ordering</span>
+              <span class="visit__info-value">Ordering details coming soon</span>
+            </div>
+          </div>
+          <div class="visit__map-placeholder reveal" aria-label="Map placeholder">
+            <span>Map coming soon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 09 INSTAGRAM ============ -->
+    <section class="instagram" id="instagram">
+      <div class="container">
+        <h2 class="reveal">Follow the joy</h2>
+        <a href="https://instagram.com/chera_patisserie" target="_blank" rel="noopener noreferrer" class="instagram__handle reveal">@CHERA_PATISSERIE</a>
+      </div>
+      <div class="instagram__grid" id="instagram-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ WAVY DIVIDER (into footer) ============ -->
+  <svg class="wavy-divider" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true" style="display:block;margin-bottom:-1px">
+    <path d="M0,20 C360,40 720,0 1080,20 C1260,30 1380,15 1440,20 L1440,40 L0,40 Z" fill="#8F123B"/>
+  </svg>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <div class="site-footer__logo">
+          <img src="assets/images/logo.jpg" alt="Chera Patisserie" width="320" height="100">
+        </div>
+        <p class="site-footer__tagline">Born from Joy, crafted in cream.</p>
+        <a href="https://instagram.com/chera_patisserie" target="_blank" rel="noopener noreferrer" style="color:var(--ivory);text-decoration:none;font-size:0.9375rem;opacity:0.8">
+          @CHERA_PATISSERIE
+        </a>
+      </div>
+
+      <div class="site-footer__nav">
+        <span class="site-footer__nav-title">Explore</span>
+        <a href="#desserts">Desserts</a>
+        <a href="#menu">Menu</a>
+        <a href="#craft">Our Craft</a>
+        <a href="#gifting">Gifting</a>
+        <a href="#visit">Visit</a>
+      </div>
+
+      <div class="site-footer__social">
+        <span class="site-footer__nav-title">Connect</span>
+        <a href="https://instagram.com/chera_patisserie" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <p style="font-size:0.8125rem;opacity:0.5;margin-top:8px">
+          We use the finest ingredients to offer exceptional quality in every piece.
+        </p>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <span>&copy; 2024 CHERA PATISSERIE. All rights reserved.</span>
+      <span class="site-footer__demo">Website demo</span>
+    </div>
+  </footer>
+
+  <!-- ============ QUICK-VIEW MODAL ============ -->
+  <div class="overlay" id="modal-overlay" aria-hidden="true"></div>
+  <div class="modal" id="quick-view-modal" role="dialog" aria-label="Product quick view"></div>
+
+  <!-- ============ CART DRAWER ============ -->
+  <div class="overlay" id="cart-overlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-label="Shopping cart">
+    <div class="cart-drawer__header">
+      <h3 style="font-family:var(--font-display);font-size:1.25rem;color:var(--burgundy);margin:0">Your Box</h3>
+      <button class="modal__close cart-drawer__close" aria-label="Close cart">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="2" y1="2" x2="14" y2="14"/><line x1="14" y1="2" x2="2" y2="14"/></svg>
+      </button>
+    </div>
+    <div class="cart-drawer__body">
+      <!-- Rendered by JS -->
+    </div>
+    <div class="cart-drawer__footer">
+      <!-- Rendered by JS -->
+    </div>
+  </aside>
+
+  <!-- ============ ARIA LIVE REGION ============ -->
+  <div aria-live="polite" aria-atomic="true" class="sr-only" id="cart-announcer"></div>
+
+  <!-- ============ JAVASCRIPT ============ -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

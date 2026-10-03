@@ -1,0 +1,68 @@
+:root {
+  /* Colors */
+  --ivory: #FFF9F2;
+  --raspberry: #B20A45;
+  --raspberry-hover: #9A083B;
+  --burgundy: #8F123B;
+  --blush: #F7C6CE;
+  --chocolate: #5A3025;
+  --white: #FFFFFF;
+  
+  /* Product accent colors (for flavor dots only) */
+  --pistachio: #7B9E4D;
+  --strawberry-red: #E63946;
+  --mango-yellow: #F4A261;
+  --classic-brown: #8B6914;
+  --chocolate-dark: #3C1518;
+  --caramel: #C8963E;
+  --hazelnut: #A67B5B;
+  --bueno: #8B5E3C;
+  
+  /* Typography */
+  --font-display: 'Cormorant Garamond', 'Georgia', serif;
+  --font-body: 'Jost', 'Helvetica Neue', sans-serif;
+  --font-playful: 'Fraunces', 'Georgia', serif;
+  
+  /* Spacing (8px base) */
+  --space-1: 0.5rem;   /* 8px */
+  --space-2: 1rem;     /* 16px */
+  --space-3: 1.5rem;   /* 24px */
+  --space-4: 2rem;     /* 32px */
+  --space-5: 2.5rem;   /* 40px */
+  --space-6: 3rem;     /* 48px */
+  --space-7: 4rem;     /* 64px */
+  --space-8: 5rem;     /* 80px */
+  --space-9: 6rem;     /* 96px */
+  --space-10: 8rem;    /* 128px */
+  
+  /* Radii */
+  --radius-sm: 12px;
+  --radius-md: 24px;
+  --radius-lg: 40px;
+  --radius-pill: 9999px;
+  --radius-arch: 50% 50% 0 0;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(90,48,37,0.06);
+  --shadow-md: 0 4px 16px rgba(90,48,37,0.08);
+  --shadow-lg: 0 8px 32px rgba(90,48,37,0.10);
+  --shadow-header: 0 1px 8px rgba(90,48,37,0.06);
+  
+  /* Transitions */
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 200ms;
+  --duration-normal: 350ms;
+  --duration-slow: 600ms;
+  
+  /* Layout */
+  --max-width: 1280px;
+  --header-height: 72px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-normal: 0ms;
+    --duration-slow: 0ms;
+  }
+}
